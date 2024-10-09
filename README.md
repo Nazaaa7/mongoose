@@ -1,18 +1,18 @@
 # TP Mongoose
 
-#Problema: 
+# Problema: 
 Un comercio de suministros de limpieza requiere que cada uno de sus empleados pueda
 registrar sus ventas de forma individual. Además, los empleados deben tener acceso a la
 aplicación utilizando credenciales.
 
-#Diagrama: 
+# Diagrama: 
 ![Productos](https://github.com/user-attachments/assets/064f4077-4e82-4849-9a0c-916e61ae72f8)
 
 
-#Para solucionar el prblema planteado, se crearon diferentes modelos, entre los que tenemos: Usuarios, Empleados, Ventas y Productos.
+# Para solucionar el problema planteado, se crearon diferentes modelos, entre los que tenemos: Usuarios, Empleados, Ventas y Productos.
 
 
-#Modelo de Users:
+# Modelo de Users:
 import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema({
@@ -26,7 +26,7 @@ export default user;
 
  (en este modelo, se solicitan los datos de nombre de usuario y contraseña)
 
- #Modelo de Personal:
+ # Modelo de Personal:
 
  import mongoose from 'mongoose';
 
@@ -45,7 +45,7 @@ export default personal;
 
 (En este, se solicitan los datos personales del empleado, nombre, apellido, etc)
 
-#Modelo de Products:
+# Modelo de Products:
 import mongoose from 'mongoose';
 
 const productsSchema = new mongoose.Schema({
@@ -60,7 +60,7 @@ export default products;
 (En este, se solicitan los datos de los productos del comercio)
 
 
-#Modelo de Sale:
+# Modelo de Sale:
 
 import mongoose from 'mongoose';
 
